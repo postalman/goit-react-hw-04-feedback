@@ -9,7 +9,8 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           key={key}
           type="button"
           name={key}
-          onClick={onLeaveFeedback}
+          onClick={() => {onLeaveFeedback(key)}}
+          
         >
           {key}
         </BtnCSS>
